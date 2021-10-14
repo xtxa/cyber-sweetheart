@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'hearts';
+  src: url('hearts.ttf')  format('truetype')
+ }
+
+*{
+	/*text-align: center;*/
+	
+	position: static;
+}
+
+@keyframes backgroundMove{
+	0% {background-color: rgba(111, 57, 255, 0.3);}
+	25% {background-color: rgba(0, 185, 102, 0.3);}
+	50% {background-color: rgba(10, 1, 178, 0.3);}
+	75% {background-color: rgba(118, 30, 199, 0.3);}
+	100% {background-color: rgba(221, 0, 193, 0.3);;}
+}
+
+body{
+	background-color: rgb(111, 57, 255);
+	animation: backgroundMove 10s infinite alternate;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 5.5em;
+	letter-spacing: 1.5px;
+	font-family: hearts, lores-21-serif, serif;
+}
+
+h1, p, button{
+	color: rgb(111, 57, 255);
+/*	color: white;*/
+	margin: 5% 0;
+	top: 0;
+/*	text-align: center;*/
+}
+
+p{
+	font-size: 1.2em;
+	font-family: lores-21-serif, serif;
+	line-height: 120%;
+}
+
+button{
+	padding: 20px;
+	background-color: rgb(111, 57, 255);
+	color: white;
+	margin: 0 auto;
+	font-size: 1em;
+	border: none;
+	box-shadow: 2px 2px 2px rgba(111, 57, 255, 0.5);
+	font-family: lores-21-serif, serif;
+}
+
+button:hover{
+	background-color: rgba(111, 57, 255, 0.5);
+	transition: ease 0.3s;
+}
+
+section{
+	
+	display: inline-block;
+	padding: 0 6vw;
+}
+
+#section1{
+	padding-top: 5vh;
+	vertical-align: top;
+	width: 45vw;
+}
+
+#section2{
+	width: 25vw;
+}
+
+#imageHold{
+	height: 90vh;
+	background-image: url("bride.png");
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
